@@ -141,6 +141,7 @@ public class Anagrams{
     //3) compare sorted Strings (aceimn = aceimn), if they are same then return true(anagram),else flase(not anagram)
 
 	public static boolean checkIfTwoStringsAreAnagrams(String s1, String s2){
+		// isAnagrams is not used
 		boolean isAnagrams = true;
 		//checking length of strings
 		if(s1.length()!=s2.length()){
@@ -250,6 +251,7 @@ class CalcEngine {
         if (discriminant > 0){
             // The equation has two roots
             roots = new double[2];
+	    // What if a == 0? Wrong form, should be (-b + sqrt(discriminant)) / (2 * a)
             roots[0] = ((-b + discriminant) / (2 * a));
             roots[1] = ((-b - discriminant) / (2 * a));
         }
